@@ -70,6 +70,7 @@ class CallPopFactory(ReconnectingClientFactory):
     """
     protocol = AMIProtocol
     connect_callback=None
+    plaintext_login=None
 
     def __init__(self, username, secret, server='localhost', port=5038, id=None):
         self.id = id
